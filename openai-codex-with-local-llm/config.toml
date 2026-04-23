@@ -1,0 +1,11 @@
+web_search = "disabled"
+
+[model_providers.llama_cpp]
+name = "llama.cpp at localhost"
+base_url = "http://localhost:12345/v1"
+wire_api = "responses"
+stream_idle_timeout_ms = 10000000
+
+[profiles.qwen36]
+model = "unsloth/Qwen3.6-35B-A3B-GGUF:UD-Q4_K_XL"
+model_provider = "llama_cpp"
